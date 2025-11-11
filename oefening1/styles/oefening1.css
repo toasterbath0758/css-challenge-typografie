@@ -5,12 +5,16 @@
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
   /* regular / 400 */
-
+  font-family: "ExpletusSans";
+  src: url(../fonts/ExpletusSans-Regular.ttf);
+  font-weight: 400;
 }
 
 @font-face {
   /* bold / 700 */
-
+  font-family: "ExpletusSans";
+  src: url(../fonts/ExpletusSans-Bold.ttf);
+  font-weight: 700;
 }
 
 
@@ -21,21 +25,23 @@ li:first-of-type {
 
 li:first-of-type h2 {
   /* JOUW CODE HIER */
-  
+  font-family: "ExpletusSans", sans-serif;
+  font-size: 2em;
 
 }
 
 li:first-of-type p {
   /* JOUW CODE HIER */
-  
+  font-family: "ExpletusSans", sans-serif;
 
 }
 
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
   /* JOUW CODE HIER */
-
-  
+  font-family: "ExpletusSans", sans-serif;
+  font-size: 2em;
+  font-weight: Bold;
 }
 
 
@@ -48,7 +54,12 @@ li:first-of-type p::first-letter {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Thin.ttf);
+  font-weight: 100;
+  font-size: x-large;
+  text-transform: uppercase;
+
 }
 
 
@@ -58,9 +69,12 @@ li:nth-of-type(2) {
   --color:hsl(0 0% 100%);
   --background:rgb(0 24 54);
   --shadow:Cyan;
+
   
   /* met onderstaande regels staat de tekst in het midden */
   /* en elk woord op een nieuwe regel */
+  text-transform: uppercase;
+  
   display:grid;
   grid-auto-columns:min-content;  
   place-content:center;
@@ -70,12 +84,13 @@ li:nth-of-type(2) {
 }
 
 li:nth-of-type(2) h2 {
+  
   margin:0;
   color:var(--color);
 
   /* JOUW CODE HIER */
-
-  
+  font-family: "Montserrat";
+  text-shadow:var(--shadow) 0 0 10px;
 }
 
 
@@ -88,7 +103,9 @@ li:nth-of-type(2) h2 {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Saira";
+  src: url(../fonts/Saira_Condensed-Bold.ttf);
+  font-weight: 700;
 }
 
 li:nth-of-type(3) {
@@ -98,12 +115,20 @@ li:nth-of-type(3) {
   --shadow:rgb(0 0 0 / .75);
 
   /* JOUW CODE HIER */
-  
-
+  background-color: var(--background);
+  display: grid;
+  font-size: x-large;
+  line-height: 1.4em;
+  grid-auto-columns:min-content;
+  place-content: center;
 }
 
 li:nth-of-type(3) h2 {
   /* JOUW CODE HIER */
-
-  
+  font-family: "Saira";
+  text-transform: uppercase;
+  text-shadow:var(--shadow) 2px 2px 0;
+  color:var(--color);
+  text-align: center;
+  transform: skewY(-15deg);
 }
